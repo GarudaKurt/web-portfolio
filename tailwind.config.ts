@@ -8,13 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      darkMode: "class", // important for shadcnUI + next-themes
+      colors: {
+        secondary: "#222222",
+        primary: "#161616",
       },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+      },
+      backgroundImage: {
+        "galaxy":"radial-gradient(circle at bottom right, #0a0a0a, #1c1c1c, #2e2e2e, #0a0a0a)",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      }
     },
   },
-  plugins: [],
 };
+
 export default config;
