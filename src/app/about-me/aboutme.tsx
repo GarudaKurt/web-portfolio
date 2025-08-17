@@ -38,7 +38,7 @@ const Aboutme = () => {
   ];
 
   return (
-    <div className="bg-galaxy py-12 px-6 md:px-16">
+    <div className="py-12 px-6 md:px-16">
       {/* About Me */}
       <h2 className="text-3xl md:text-5xl bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-300 bg-clip-text text-transparent font-bold font-montserrat text-start mb-8">
         ABOUT ME
@@ -51,10 +51,10 @@ const Aboutme = () => {
         defaultValue="item-1"
       >
         <AccordionItem value="aboutme">
-          <AccordionTrigger className="text-xl font-semibold font-montserrat text-gray-300 text-justify leading-relaxed">
+          <AccordionTrigger className="text-xl font-semibold font-montserrat text-secondary dark:text-gray-300 text-justify leading-relaxed">
             Learn More
           </AccordionTrigger>
-          <AccordionContent className="text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
+          <AccordionContent className="text-secondary dark:text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
             I have three years of industry experience in C/C++ development,
             primarily focused on embedded systems. I am also a self-taught web
             developer, driven by a strong passion for front-end and full-stack
@@ -72,7 +72,7 @@ const Aboutme = () => {
       </Accordion>
 
       {/* Work Experience */}
-      <h2 className="text-3xl md:text-4xl font-montserrat text-white font-bold mt-12 mb-8">
+      <h2 className="text-3xl md:text-4xl font-montserrat font-bold mt-12 mb-8 text-primary dark:text-white">
         Work Experience
       </h2>
       <div className="space-y-6">
@@ -80,10 +80,10 @@ const Aboutme = () => {
           <div key={index} className="border-b pb-4">
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="text-lg font-bold font-montserrat text-white text-gray-800">
+                <h3 className="text-lg font-bold font-montserrat text-primary dark:text-white">
                   {job.title}
                 </h3>
-                <div className="flex items-center font-montserrat text-gray-300 text-sm mt-1">
+                <div className="flex items-center font-montserrat text-secondary dark:text-gray-300 text-sm mt-1">
                   <Building2 size={14} className="mr-1" /> {job.company}
                   <MapPin size={14} className="ml-4 mr-1" /> {job.location}
                 </div>
@@ -92,26 +92,28 @@ const Aboutme = () => {
                 variant="secondary"
                 className={
                   job.type === "Full Time"
-                    ? "bg-green-200 text-green-800"
-                    : "bg-green-100 text-green-700"
+                    ? "bg-green-200 text-green-800 dark:bg-green-700 dark:text-green-200"
+                    : "bg-green-100 text-green-700 dark:bg-green-600 dark:text-green-100"
                 }
               >
                 {job.type}
               </Badge>
             </div>
-            <div className="flex items-center font-montserrat text-gray-300 text-sm mt-2">
+
+            <div className="flex items-center font-montserrat text-secondary dark:text-gray-300 text-sm mt-2">
               <Calendar size={14} className="mr-1" /> {job.period}
             </div>
+
             {job.tech && (
               <div className="flex flex-wrap items-center font-montserrat mt-2 gap-2">
-                <span className="text-sm font-semibold text-gray-300">
+                <span className="text-sm font-semibold text-secondary dark:text-gray-300">
                   TechStack:
                 </span>
                 {job.tech.split(",").map((techItem, techIndex) => (
                   <Badge
                     key={techIndex}
                     variant="outline"
-                    className="text-gray-300 font-montserrat border-gray-300"
+                    className="text-secondary dark:text-gray-300 font-montserrat border-gray-300 dark:border-gray-500"
                   >
                     {techItem.trim()}
                   </Badge>
@@ -123,14 +125,14 @@ const Aboutme = () => {
       </div>
 
       {/* Education */}
-      <h2 className="text-3xl md:text-4xl text-white font-montserrat font-bold mt-12 mb-8">
+      <h2 className="text-3xl md:text-4xl font-montserrat font-bold mt-12 mb-8 text-primary dark:text-white">
         Education
       </h2>
       <div className="border-b pb-4">
-        <h3 className="text-lg font-bold font-montserrat text-gray-300">
+        <h3 className="text-lg font-bold font-montserrat text-secondary dark:text-gray-300">
           Bachelor of Science in Computer Engineering
         </h3>
-        <div className="flex flex-col font-montserrat font-semibold sm:flex-row sm:items-center text-gray-400 text-sm mt-2 gap-2">
+        <div className="flex flex-col font-montserrat font-semibold sm:flex-row sm:items-center text-secondary dark:text-gray-400 text-sm mt-2 gap-2">
           <div className="flex items-center">
             <MapPin size={14} className="mr-1" /> University of Cebu - Main
             Campus
@@ -143,10 +145,10 @@ const Aboutme = () => {
 
       {/* Download Resume Section */}
       <div className="mt-12 flex flex-col items-center">
-        <h2 className="text-2xl text-white font-monsterrat font-bold mb-4">
+        <h2 className="text-2xl font-montserrat font-bold mb-4 text-primary dark:text-white">
           Download My Resume
         </h2>
-        <p className="text-gray-500 font-monsterrat font-semibold mb-4 text-center">
+        <p className="text-secondary dark:text-gray-300 font-montserrat font-semibold mb-4 text-center">
           Click the button below to download my resume in PDF format.
         </p>
 

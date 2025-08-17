@@ -1,7 +1,7 @@
 const ContactMe = () => {
   return (
     <>
-      <div className="bg-galaxt py-12 px-6 md:px-16">
+      <div className="bg-white dark:bg-black transition-colors duration-500 py-12 px-6 md:px-16">
         <h2 className="text-4xl font-monserrat font-bold bg-gradient-to-tr from-red-500 via-pink-500 to-blue-500 bg-clip-text text-transparent mb-8">
           Let's Connect
         </h2>

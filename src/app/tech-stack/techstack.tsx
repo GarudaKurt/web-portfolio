@@ -58,7 +58,7 @@ const techs = [
 
 const Techstack = () => {
   return (
-    <div className="bg-galaxy py-12 px-6 md:px-16">
+    <div className=" py-12 px-6 md:px-16">
       <h2 className="text-3xl md:text-4xl text-gray-400 font-bold text-center mb-8">
         EXPERIENCE WITH
       </h2>
@@ -72,7 +72,7 @@ const Techstack = () => {
             >
               {tech.icon}
             </div>
-            <span className="mt-2 text-sm font-semibold font-montserrat text-white md:text-base">
+            <span className="mt-2 text-sm font-semibold font-montserrat text-primary dark:text-white md:text-base">
               {tech.name}
             </span>
           </div>

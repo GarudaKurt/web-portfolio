@@ -153,22 +153,22 @@ const Myprojects = () => {
 
   return (
     <>
-      <div className="bg-galaxy py-8 px-6 md:px-16">
+      <div className=" bg-white dark:bg-black transition-colors duration-500 py-8 px-6 md:px-16">
         <h2 className="text-3xl md:text-5xl bg-gradient-to-tr from-blue-500 via-orange-500 to-orange-500 bg-clip-text text-transparent font-bold font-montserrat text-center mb-8">
           PROJECTS
         </h2>
-        <h2 className="flex justify-center text-xl font-semibold font-montserrat text-gray-500">
+        <h2 className="flex justify-center text-center text-xl font-semibold font-montserrat text-gray-500">
           Things I've built so far in Freelancing
         </h2>
       </div>
 
       {/* Cards with side buttons */}
-      <div className="flex bg-galaxy items-center gap-4 px-6 py-4">
+      <div className="flex bg-white dark:bg-black transition-colors duration-500 items-center gap-4 px-6 py-4">
         {/* Prev Button */}
         <Button
           onClick={handlePrev}
           disabled={startIndex === 0}
-          className="p-2 bg-white rounded-full hover:bg-muted/80 disabled:opacity-50"
+          className="hidden sm:flex p-2 bg-white rounded-full hover:bg-muted/80 disabled:opacity-50"
         >
           <ChevronLeft />
         </Button>
@@ -243,7 +243,7 @@ const Myprojects = () => {
         <Button
           onClick={handleNext}
           disabled={startIndex + visibleCount >= mockData.length}
-          className="p-2 bg-white rounded-full hover:bg-muted/80 disabled:opacity-50"
+          className="hidden sm:flex p-2 bg-white rounded-full hover:bg-muted/80 disabled:opacity-50"
         >
           <ChevronRight />
         </Button>
