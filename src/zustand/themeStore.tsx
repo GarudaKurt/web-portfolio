@@ -10,7 +10,7 @@ interface ThemeState {
 export const useThemeStore = create<ThemeState>()(
   persist(
     (set, get) => ({
-      theme: "light", // default
+      theme: "light",
       setTheme: (theme) => {
         set({ theme });
         const html = document.documentElement;
@@ -23,7 +23,7 @@ export const useThemeStore = create<ThemeState>()(
       },
     }),
     {
-      name: "theme-storage", // localStorage key
+      name: "theme-storage",
     }
   )
 );

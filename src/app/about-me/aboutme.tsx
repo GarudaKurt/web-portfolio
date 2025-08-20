@@ -25,7 +25,7 @@ const Aboutme = () => {
       company: "Freelancer",
       location: "Cebu City",
       type: "Parttime",
-      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, Django, RESTAPI, OOP, Java, C#, Arduino, C++, SQLite, MySQL, Firebase",
+      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, Django, RESTAPI, OOP, C#, Arduino, C++, SQLite, MySQL, Firebase",
       period: "November 2022 - Present",
     },
     {
@@ -39,7 +39,6 @@ const Aboutme = () => {
 
   return (
     <div className="py-12 px-6 md:px-16">
-      {/* About Me */}
       <h2 className="text-3xl md:text-5xl bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-300 bg-clip-text text-transparent font-bold font-montserrat text-start mb-8">
         ABOUT ME
       </h2>
@@ -56,15 +55,14 @@ const Aboutme = () => {
           </AccordionTrigger>
           <AccordionContent className="text-secondary dark:text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
             I have three years of industry experience in C/C++ development,
-            primarily focused on embedded systems. I am also a self-taught web
-            developer, driven by a strong passion for front-end and full-stack
-            development. I have gained hands-on experience with modern
-            frameworks such as React.js and Next.js through freelance projects,
-            as well as back-end development using Node.js, Express.js, and the
-            Django framework (Python) for building RESTful APIs. Additionally, I
+            primarily focused on embedded systems. In addition, I am a
+            self-taught web developer with a strong passion for front-end and
+            full-stack development. I have gained hands-on experience with
+            modern frameworks such as React.js and Next.js through freelance
+            projects, as well as back-end development using Node.js, Express.js,
+            and the Django framework (Python) for building RESTful APIs. I also
             have experience with React Native (Expo) for cross-platform mobile
-            app development, and prior exposure to Delphi and C# for desktop
-            applications. Beyond development, I enjoy mentoring students on
+            app development. Beyond development, I enjoy mentoring students on
             their final-year projects in areas such as Embedded Systems, IoT,
             AI, web applications, and mobile app development.
           </AccordionContent>
@@ -152,7 +150,7 @@ const Aboutme = () => {
           Click the button below to download my resume in PDF format.
         </p>
 
-        <a href="/resumes/aletada_resume.pdf" download>
+        <a href="/resumes/ALDREN_LETADA_RESUME.pdf" download>
           <Button
             variant="default"
             className="flex items-center gap-2 bg-pink-500 text-white hover:bg-pink-600"

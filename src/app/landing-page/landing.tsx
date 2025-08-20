@@ -6,16 +6,14 @@ import Aboutme from "../about-me/aboutme";
 const Landing = () => {
   return (
     <div className="bg-white dark:bg-black transition-colors duration-500">
-      {/* Main Content */}
       <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 mt-12 gap-8 md:gap-16">
-        {/* Left Side - Text */}
         <div className="space-y-4 text-center md:text-left max-w-md font-montserrat md:max-w-lg">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-white flex items-center justify-center md:justify-start gap-2">
             Hi <span>👋</span>,
           </h1>
 
           <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-white flex items-center justify-center md:justify-start gap-2">
-            I'm{" "}
+            I&apos;m{" "}
             <span className="bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               ALDREN
             </span>
@@ -42,8 +40,8 @@ const Landing = () => {
         </div>
       </div>
       <div className="mb-6">
-        <Techstack />
         <Myprojects />
+        <Techstack />
         <Aboutme />
       </div>
     </div>

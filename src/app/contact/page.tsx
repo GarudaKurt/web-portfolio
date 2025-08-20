@@ -1,5 +1,4 @@
-import ContactMe from "./contackme";
-
+import ContactMe from "./contactme";
 const ContactMePage = () => {
   return (
     <>

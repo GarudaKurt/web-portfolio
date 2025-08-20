@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useThemeStore } from "@/zustand/themeStore";
-import { HiMoon, HiSun, HiMenuAlt3 } from "react-icons/hi";
+import { ThemeSwitch } from "@/app/theme/themeswitch";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -12,13 +14,14 @@ import {
   SheetHeader,
   SheetTitle,
   SheetDescription,
+  SheetClose,
 } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
-  const { theme, toggleTheme, setTheme } = useThemeStore();
+  const { theme, toggleTheme } = useThemeStore();
   const [open, setOpen] = useState(false);
 
-  // Apply theme on first load
   useEffect(() => {
     const html = document.documentElement;
     if (theme === "dark") html.classList.add("dark");
@@ -35,7 +38,6 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between sticky top-0 z-50 px-6 py-4 w-full bg-white dark:bg-black transition-colors duration-500">
-      {/* Logo */}
       <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -48,14 +50,13 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Desktop Menu */}
       <div className="hidden md:flex flex-1 justify-center">
         <nav className="flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-md text-white font-montserrat hover:text-white transition-colors"
+              className="text-md font-montserrat text-primary dark:text-white "
             >
               {link.name}
             </Link>
@@ -63,7 +64,6 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Desktop Social + Dark Mode */}
       <div className="hidden md:flex items-center gap-4">
         <Link
           href="https://github.com/yourusername"
@@ -81,27 +81,31 @@ const Header = () => {
           <FaLinkedin size={28} />
         </Link>
 
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-        >
-          {theme === "dark" ? <HiSun size={24} /> : <HiMoon size={24} />}
-        </button>
+        {/* Theme Switch */}
+        <ThemeSwitch theme={theme} toggleTheme={toggleTheme} />
       </div>
 
-      {/* Mobile Menu */}
       <div className="md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button className="p-2 rounded-md border bg-white hover:bg-gray-500 transition">
-              <HiMenuAlt3 size={28} />
-            </button>
+            <Button className="p-2 rounded-md border bg-white hover:bg-gray-500 transition">
+              <HiMenuAlt3 className="bg-white" size={28} />
+            </Button>
           </SheetTrigger>
 
           <SheetContent
             side="right"
-            className="p-6 w-64 bg-white dark:bg-gray-800 shadow-xl"
+            className="p-6 w-64 bg-white dark:bg-black shadow-xl"
           >
+            <SheetClose asChild>
+              <button
+                className="absolute top-4 right-4 p-2 rounded-full 
+                 bg-gray-200 hover:bg-gray-300 
+                 dark:bg-white dark:hover:bg-gray-200"
+              >
+                <X className="h-5 w-5 text-black" />
+              </button>
+            </SheetClose>
             <SheetHeader>
               <SheetTitle />
               <SheetDescription />
@@ -120,9 +124,9 @@ const Header = () => {
               ))}
             </nav>
 
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-6 items-center">
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/GarudaKurt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors"
@@ -130,18 +134,15 @@ const Header = () => {
                 <FaGithub size={28} />
               </Link>
               <Link
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/aldren-letada/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
               >
                 <FaLinkedin size={28} />
               </Link>
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-              >
-                {theme === "dark" ? <HiSun size={24} /> : <HiMoon size={24} />}
-              </button>
+
+              <ThemeSwitch theme={theme} toggleTheme={toggleTheme} />
             </div>
           </SheetContent>
         </Sheet>

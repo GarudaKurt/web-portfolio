@@ -1,3 +1,5 @@
+"use client";
+
 import Landing from "./landing-page/landing";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
