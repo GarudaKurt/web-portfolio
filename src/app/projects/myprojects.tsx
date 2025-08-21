@@ -71,12 +71,12 @@ const mockData = [
   },
   {
     id: 6,
-    title: "Real State landing page",
+    title: "Real State Landing Page",
     link: "https://github.com/GarudaKurt/REALSTATE-LANDING-PAGE",
     live: "https://realstate-landing-page-lirc.vercel.app/",
-    tech: "React, TypeScript, Tailwind, shadcnUI",
-    type: "Client Project",
-    image: "/images/projects/img_6.png",
+    tech: "NextJs, Tailwind, shadcnUI",
+    type: "Clone Project",
+    image: "/images/figma/realstate/landing.png",
   },
   {
     id: 7,

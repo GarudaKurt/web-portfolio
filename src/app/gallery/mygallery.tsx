@@ -55,6 +55,17 @@ const mockData = [
   { id: 5, img: "/images/figma/inventory/add.png" },
   { id: 5, img: "/images/figma/inventory/order.png" },
   { id: 5, img: "/images/figma/inventory/history.png" },
+
+  // Real State
+  { id: 6, img: "/images/figma/realstate/landing.png" },
+  { id: 6, img: "/images/figma/realstate/me.png" },
+  { id: 6, img: "/images/figma/realstate/sold.png" },
+  { id: 6, img: "/images/figma/realstate/book.png" },
+  { id: 6, img: "/images/figma/realstate/gallery.png" },
+  { id: 6, img: "/images/figma/realstate/partners.png" },
+  { id: 6, img: "/images/figma/realstate/services.png" },
+  { id: 6, img: "/images/figma/realstate/visit.png" },
+  { id: 6, img: "/images/figma/realstate/footer.png" },
 ];
 
 const Projects = ({

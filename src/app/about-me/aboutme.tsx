@@ -28,13 +28,6 @@ const Aboutme = () => {
       tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, Django, RESTAPI, OOP, C#, Arduino, C++, SQLite, MySQL, Firebase",
       period: "November 2022 - Present",
     },
-    {
-      title: "University Working Scholar",
-      company: "University Of Cebu",
-      location: "Cebu City",
-      type: "Fulltime",
-      period: "April 2018 - Dec 2021",
-    },
   ];
 
   return (
@@ -120,25 +113,6 @@ const Aboutme = () => {
             )}
           </div>
         ))}
-      </div>
-
-      {/* Education */}
-      <h2 className="text-3xl md:text-4xl font-montserrat font-bold mt-12 mb-8 text-primary dark:text-white">
-        Education
-      </h2>
-      <div className="border-b pb-4">
-        <h3 className="text-lg font-bold font-montserrat text-secondary dark:text-gray-300">
-          Bachelor of Science in Computer Engineering
-        </h3>
-        <div className="flex flex-col font-montserrat font-semibold sm:flex-row sm:items-center text-secondary dark:text-gray-400 text-sm mt-2 gap-2">
-          <div className="flex items-center">
-            <MapPin size={14} className="mr-1" /> University of Cebu - Main
-            Campus
-          </div>
-          <div className="flex items-center">
-            <Calendar size={14} className="mr-1" /> April 2018 - July 2022
-          </div>
-        </div>
       </div>
 
       {/* Download Resume Section */}
