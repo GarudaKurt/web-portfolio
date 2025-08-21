@@ -66,7 +66,7 @@ const Header = () => {
 
       <div className="hidden md:flex items-center gap-4">
         <Link
-          href="https://github.com/yourusername"
+          href="https://github.com/GarudaKurt"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-black transition-colors dark:text-gray-300 dark:hover:text-white"
@@ -74,7 +74,7 @@ const Header = () => {
           <FaGithub size={28} />
         </Link>
         <Link
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/aldren-letada/"
           rel="noopener noreferrer"
           className="text-blue-700 hover:text-blue-800 transition-colors dark:text-blue-400 dark:hover:text-blue-300"
         >
