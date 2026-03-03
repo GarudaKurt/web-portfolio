@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
