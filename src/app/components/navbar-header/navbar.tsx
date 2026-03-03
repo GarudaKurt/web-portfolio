@@ -1,9 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useThemeStore } from "@/zustand/themeStore";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { X } from "lucide-react";
 import Link from "next/link";
 import {
   Sheet,
