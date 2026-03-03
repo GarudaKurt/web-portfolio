@@ -21,11 +21,27 @@ const Aboutme = () => {
       period: "August 2022 - Present",
     },
     {
+      title: "Software Developer",
+      company: "Aldesa BPO Inc.",
+      location: "Cebu City",
+      type: "Fulltime",
+      tech: "HTML5, CSS3, Bootstrap, Jquery, JavaScript, C# asp.net mvc, SqlServer, Postman",
+      period: "October 6, 2026 - March 30, 2026",
+    },
+    {
       title: "Software Engineer",
       company: "Freelancer",
       location: "Cebu City",
       type: "Parttime",
-      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, Django, RESTAPI, OOP, C#, Arduino, C++, SQLite, MySQL, Firebase",
+      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, RESTAPI, OOP, C#, Arduino, C++, SQLite, MySQL, Firebase",
+      period: "November 2022 - Present",
+    },
+    {
+      title: "Embedded Engineer",
+      company: "Freelancer",
+      location: "Cebu City",
+      type: "Parttime",
+      tech: "Arduino, ESP32, Raspberry Pi, IoT, AI Object detection",
       period: "November 2022 - Present",
     },
   ];
@@ -43,27 +59,18 @@ const Aboutme = () => {
         defaultValue="item-1"
       >
         <AccordionItem value="aboutme">
-          <AccordionTrigger className="text-xl font-semibold font-montserrat text-secondary dark:text-gray-300 text-justify leading-relaxed">
+          <AccordionTrigger className="text-xl font-semibold font-montserrat text-white text-justify leading-relaxed">
             Learn More
           </AccordionTrigger>
-          <AccordionContent className="text-secondary dark:text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
-            I have three years of industry experience in C/C++ development,
-            primarily focused on embedded systems. In addition, I am a
-            self-taught web developer with a strong passion for front-end and
-            full-stack development. I have gained hands-on experience with
-            modern frameworks such as React.js and Next.js through freelance
-            projects, as well as back-end development using Node.js, Express.js,
-            and the Django framework (Python) for building RESTful APIs. I also
-            have experience with React Native (Expo) for cross-platform mobile
-            app development. Beyond development, I enjoy mentoring students on
-            their final-year projects in areas such as Embedded Systems, IoT,
-            AI, web applications, and mobile app development.
+          <AccordionContent className="text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
+     I have three years of industry experience in C/C++ backend development, primarily focused on embedded systems for Lexmark printers. In addition, I have six months of experience at Aldesa BPO Inc. as a Full-Stack Software Engineer, where I mainly worked on backend development and code maintenance for CRM web applications using the C# ASP.NET MVC framework.
+Beyond my professional experience, I also mentor students on their final-year projects as part of my freelance work. I provide guidance in areas such as Embedded Systems, IoT, AI, web applications, and mobile app development.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
 
       {/* Work Experience */}
-      <h2 className="text-3xl md:text-4xl font-montserrat font-bold mt-12 mb-8 text-primary dark:text-white">
+      <h2 className="text-3xl md:text-4xl font-montserrat font-bold mt-12 mb-8 text-white">
         Work Experience
       </h2>
       <div className="space-y-6">
@@ -71,10 +78,10 @@ const Aboutme = () => {
           <div key={index} className="border-b pb-4">
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="text-lg font-bold font-montserrat text-primary dark:text-white">
+                <h3 className="text-lg font-bold font-montserrat text-white">
                   {job.title}
                 </h3>
-                <div className="flex items-center font-montserrat text-secondary dark:text-gray-300 text-sm mt-1">
+                <div className="flex items-center font-montserrat text-gray-300 text-sm mt-1">
                   <Building2 size={14} className="mr-1" /> {job.company}
                   <MapPin size={14} className="ml-4 mr-1" /> {job.location}
                 </div>
@@ -83,28 +90,28 @@ const Aboutme = () => {
                 variant="secondary"
                 className={
                   job.type === "Full Time"
-                    ? "bg-green-200 text-green-800 dark:bg-green-700 dark:text-green-200"
-                    : "bg-green-100 text-green-700 dark:bg-green-600 dark:text-green-100"
+                    ? "bg-green-200 hover:bg-green-200 text-green-800 dark:bg-green-700 dark:text-green-200"
+                    : "bg-green-100 hover:bg-green-100 text-green-700 dark:bg-green-600 dark:text-green-100"
                 }
               >
                 {job.type}
               </Badge>
             </div>
 
-            <div className="flex items-center font-montserrat text-secondary dark:text-gray-300 text-sm mt-2">
+            <div className="flex items-center font-montserrat text-gray-300 text-sm mt-2">
               <Calendar size={14} className="mr-1" /> {job.period}
             </div>
 
             {job.tech && (
               <div className="flex flex-wrap items-center font-montserrat mt-2 gap-2">
-                <span className="text-sm font-semibold text-secondary dark:text-gray-300">
+                <span className="text-sm font-semibold text-gray-300">
                   TechStack:
                 </span>
                 {job.tech.split(",").map((techItem, techIndex) => (
                   <Badge
                     key={techIndex}
                     variant="outline"
-                    className="text-secondary dark:text-gray-300 font-montserrat border-gray-300 dark:border-gray-500"
+                    className="text-secondary text-gray-300 font-montserrat border-gray-300 dark:border-gray-500"
                   >
                     {techItem.trim()}
                   </Badge>
@@ -117,10 +124,10 @@ const Aboutme = () => {
 
       {/* Download Resume Section */}
       <div className="mt-12 flex flex-col items-center">
-        <h2 className="text-2xl font-montserrat font-bold mb-4 text-primary dark:text-white">
+        <h2 className="text-2xl font-montserrat font-bold mb-4 text-white">
           Download My Resume
         </h2>
-        <p className="text-secondary dark:text-gray-300 font-montserrat font-semibold mb-4 text-center">
+        <p className="text-gray-300 font-montserrat font-semibold mb-4 text-center">
           Click the button below to download my resume in PDF format.
         </p>
 

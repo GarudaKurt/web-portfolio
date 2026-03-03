@@ -56,16 +56,20 @@ const mockData = [
   { id: 5, img: "/images/figma/inventory/order.png" },
   { id: 5, img: "/images/figma/inventory/history.png" },
 
-  // Real State
-  { id: 6, img: "/images/figma/realstate/landing.png" },
-  { id: 6, img: "/images/figma/realstate/me.png" },
-  { id: 6, img: "/images/figma/realstate/sold.png" },
-  { id: 6, img: "/images/figma/realstate/book.png" },
-  { id: 6, img: "/images/figma/realstate/gallery.png" },
-  { id: 6, img: "/images/figma/realstate/partners.png" },
-  { id: 6, img: "/images/figma/realstate/services.png" },
-  { id: 6, img: "/images/figma/realstate/visit.png" },
-  { id: 6, img: "/images/figma/realstate/footer.png" },
+  // kiosk bmi
+  { id: 6, img: "/images/figma/kioskbmi/img_1.png" },
+  { id: 6, img: "/images/figma/kioskbmi/img_2.png" },
+  { id: 6, img: "/images/figma/kioskbmi/img_3.png" },
+  { id: 6, img: "/images/figma/kioskbmi/img_4.png" },
+  { id: 6, img: "/images/figma/kioskbmi/img_5.png" },
+
+  // ctu inventory
+  { id: 7, img: "/images/figma/inventory-management/img_1.png" },
+  { id: 7, img: "/images/figma/inventory-management/img_2.png" },
+
+  // IoT
+  { id: 8, img: "/images/figma/smartfan/image.png" },
+  { id: 9, img: "/images/figma/energymonitoring/image.png" },
 ];
 
 const Projects = ({

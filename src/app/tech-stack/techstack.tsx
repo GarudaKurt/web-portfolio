@@ -14,6 +14,10 @@ import {
   SiTailwindcss,
   SiShadcnui,
   SiDaisyui,
+  SiSharp,
+  SiDotnet,
+  SiSqlite,
+  SiPostman,
 } from "react-icons/si";
 import {
   FaHtml5,
@@ -45,11 +49,14 @@ const techs = [
   { name: "GitHub", icon: <FaGithub />, color: "#b7afafff" },
   { name: "Linux", icon: <SiUbuntu />, color: "#239120" },
   { name: "Python", icon: <FaPython />, color: "#1088e4ff" },
-  { name: "Django", icon: <SiDjango />, color: "#b7afafff" },
   { name: "C++", icon: <SiCplusplus />, color: "#1088e4ff" },
+  { name: "C#", icon: <SiSharp />, color: "#9B4F96" },
+  { name: "C# asp.net MVC", icon: <SiDotnet />, color: "#1088e4ff" },
+  { name: "SQL Server", icon: <SiSqlite />, color: "#CC2927" },
   { name: "MySQL", icon: <SiMysql />, color: "#1088e4ff" },
   { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
   { name: "Figma", icon: <SiFigma />, color: "#F24E1E" },
+  { name: "Postman", icon: <SiPostman />, color: "#F24E1E" },
   { name: "Arduino", icon: <SiArduino />, color: "#00979D" },
   { name: "Raspberry Pi", icon: <SiRaspberrypi />, color: "#A22846" },
 ];
@@ -70,7 +77,7 @@ const Techstack = () => {
             >
               {tech.icon}
             </div>
-            <span className="mt-2 text-sm font-semibold font-montserrat text-primary dark:text-white md:text-base">
+            <span className="mt-2 text-sm font-semibold font-montserrat text-white">
               {tech.name}
             </span>
           </div>

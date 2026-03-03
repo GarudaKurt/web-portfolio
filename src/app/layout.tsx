@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ALDREN Portfolio",
-  description: "I develop strong interest in web development",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({
@@ -15,11 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="transition-colors duration-500 bg-white dark:bg-black min-h-screen">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <body className="transition-colors duration-500 bg-black dark:bg-black min-h-screen">
           <Header />
           {children}
-        </ThemeProvider>
       </body>
     </html>
   );
