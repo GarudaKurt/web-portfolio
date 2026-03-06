@@ -18,7 +18,7 @@ const Aboutme = () => {
       location: "Cebu City",
       type: "Full Time",
       tech: "Embedded C/C++, Python, CMake, Git, Gitlab, Gerrit, Coverity, Valgrind, Jenkins, Bash/Shell Scripting, Linux",
-      period: "August 2022 - Present",
+      period: "August 2022 - October 1, 2025",
     },
     {
       title: "Software Developer",
