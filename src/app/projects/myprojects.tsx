@@ -44,6 +44,15 @@ const mockData = [
   },
   {
     id: 3,
+    title: "Classroom Manangement",
+    link: "https://github.com/GarudaKurt/Music-Player/tree/test",
+    live: "https://studentsattendace.vercel.app/signin",
+    tech: "NextJs, Tailwind, shadcnUI, Firebase",
+    type: "Clients Project",
+    image: "/images/figma/classroom/image_3.png",
+  },
+  {
+    id: 4,
     title: "Music Player App",
     link: "https://github.com/GarudaKurt/Music-Player/tree/test",
     live: "https://music-player-theta-one-93.vercel.app/playlist",
@@ -52,7 +61,7 @@ const mockData = [
     image: "/images/figma/musicplayer/home.png",
   },
   {
-    id: 4,
+    id: 5,
     title: "Toursim & Rental Services.",
     link: "https://github.com/GarudaKurt/nextjsWebApp/tree/main",
     live: "https://nextjs-web-app-eight.vercel.app/",
@@ -61,7 +70,7 @@ const mockData = [
     image: "/images/figma/tourism/landing.png",
   },
   {
-    id: 5,
+    id: 6,
     title: "Inventory System for EE Lab.",
     link: "https://github.com/GarudaKurt/UCMN-EE-STUDENTS-WEB-APP-INVENTORY",
     live: "https://ucmn-ee-students-web-app-inventory.vercel.app/",
@@ -70,7 +79,7 @@ const mockData = [
     image: "/images/figma/inventory/add.png",
   },
   {
-    id: 6,
+    id: 7,
     title: "Kiosk Machine Smart BMI IoT",
     link: "https://github.com/GarudaKurt/mandaue-shs-smart-bmi",
     live: "https://smartbmi.vercel.app/",
@@ -79,7 +88,7 @@ const mockData = [
     image: "/images/figma/kioskbmi/img_1.png",
   },
   {
-    id: 7,
+    id: 8,
     title: "Inventory Management Dashboard with Email Notification",
     link: "https://github.com/GarudaKurt/ctu-inventory-system",
     live: "https://inventorymanagement-git-main-garudakurts-projects.vercel.app/",
@@ -88,7 +97,7 @@ const mockData = [
     image: "/images/figma/inventory-management/img_2.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "Smart Fan IoT Control",
     link: "https://github.com/GarudaKurt/UCB-IOT-SMART-FAN-CONTROL",
     live: "https://smartfancontrol.vercel.app/",
@@ -97,7 +106,7 @@ const mockData = [
     image: "/images/figma/smartfan/image.png",
   },
   {
-    id: 9,
+    id: 10,
     title: "Energy Monitoring IoT App",
     link: "https://github.com/GarudaKurt/ucmn-ee-energy-monitoring-iot-app",
     live: "https://ucmn-ee-energy-monitoring-iot-app.vercel.app/",
@@ -106,7 +115,7 @@ const mockData = [
     image: "/images/figma/energymonitoring/image.png",
   },
   {
-    id: 12,
+    id: 11,
     title: "Many more 50+ Embedded Projects",
     link: "https://github.com/GarudaKurt",
     live: "#",
@@ -123,9 +132,9 @@ const useVisibleCount = () => {
   useEffect(() => {
     const update = () => {
       const w = window.innerWidth;
-      if (w < 640) setVisibleCount(1);        // mobile: 1 card
-      else if (w < 1024) setVisibleCount(2);  // tablet: 2 cards
-      else setVisibleCount(4);                // desktop: 4 cards
+      if (w < 640) setVisibleCount(1);       
+      else if (w < 1024) setVisibleCount(2); 
+      else setVisibleCount(4);               
     };
 
     update();
@@ -142,7 +151,6 @@ const Myprojects = () => {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
   const visibleCount = useVisibleCount();
 
-  // Reset startIndex when visibleCount changes to avoid going out of bounds
   useEffect(() => {
     setStartIndex((prev) =>
       Math.min(prev, Math.max(0, mockData.length - visibleCount))
