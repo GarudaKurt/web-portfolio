@@ -33,7 +33,7 @@ const Aboutme = () => {
       company: "Freelancer",
       location: "Cebu City",
       type: "Parttime",
-      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, RESTAPI, OOP, C#, Arduino, C++, SQLite, MySQL, Firebase",
+      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, RESTAPI, OOP, C#,  C++, Delphi, SQLlite, SQLServer, Firebase",
       period: "November 2022 - Present",
     },
     {
@@ -41,7 +41,7 @@ const Aboutme = () => {
       company: "Freelancer",
       location: "Cebu City",
       type: "Parttime",
-      tech: "Arduino, ESP32, Raspberry Pi, IoT, AI Object detection",
+      tech: "Arduino, ESP32, STM32, Raspberry Pi, IoT, AI Object detection",
       period: "November 2022 - Present",
     },
   ];

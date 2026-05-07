@@ -107,6 +107,15 @@ const mockData = [
   },
   {
     id: 10,
+    title: "Delphi Desktop Applications",
+    link: "#",
+    live: "#",
+    tech: "Delphi, Rest Components, SQLServer, FireMonkey (FMX), VLC",
+    type: "Client Project",
+    image: "/images/figma/desktop/pharmacy.png",
+  },
+  {
+    id: 11,
     title: "Energy Monitoring IoT App",
     link: "https://github.com/GarudaKurt/ucmn-ee-energy-monitoring-iot-app",
     live: "https://ucmn-ee-energy-monitoring-iot-app.vercel.app/",
@@ -115,7 +124,7 @@ const mockData = [
     image: "/images/figma/energymonitoring/image.png",
   },
   {
-    id: 11,
+    id: 12,
     title: "Many more 50+ Embedded Projects",
     link: "https://github.com/GarudaKurt",
     live: "#",

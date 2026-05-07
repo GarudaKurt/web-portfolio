@@ -18,6 +18,7 @@ import {
   SiDotnet,
   SiSqlite,
   SiPostman,
+  SiDelphi
 } from "react-icons/si";
 import {
   FaHtml5,
@@ -52,6 +53,7 @@ const techs = [
   { name: "C++", icon: <SiCplusplus />, color: "#1088e4ff" },
   { name: "C#", icon: <SiSharp />, color: "#9B4F96" },
   { name: "C# asp.net MVC", icon: <SiDotnet />, color: "#1088e4ff" },
+  { name: "Delphi Pascal/C++", icon: <SiDelphi />, color: "#EE1C25" },
   { name: "SQL Server", icon: <SiSqlite />, color: "#CC2927" },
   { name: "MySQL", icon: <SiMysql />, color: "#1088e4ff" },
   { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },

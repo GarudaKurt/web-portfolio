@@ -80,6 +80,13 @@ const mockData = [
   // IoT
   { id: 9, img: "/images/figma/smartfan/image.png" },
   { id: 9, img: "/images/figma/energymonitoring/image.png" },
+
+  // Desktop
+  { id: 10, img: "/images/figma/desktop/textbook.png" },
+  { id: 10, img: "/images/figma/desktop/inventory_1.png" },
+  { id: 10, img: "/images/figma/desktop/library.png" },
+  { id: 10, img: "/images/figma/desktop/pharmacy.png" },
+  { id: 10, img: "/images/figma/desktop/queue.png" },
 ];
 
 const Projects = ({
