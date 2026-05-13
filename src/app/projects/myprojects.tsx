@@ -57,7 +57,7 @@ const mockData: Project[] = [
   {
     id: 3,
     title: "Classroom Manangement",
-    link: "https://github.com/GarudaKurt/Music-Player/tree/test",
+    link: "https://github.com/GarudaKurt/ucmn-ee-students-attendance",
     live: "https://studentsattendace.vercel.app/signin",
     tech: "NextJs, Tailwind, shadcnUI, Firebase",
     type: "Clients Project",
