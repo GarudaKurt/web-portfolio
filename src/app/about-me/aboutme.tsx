@@ -21,12 +21,12 @@ const Aboutme = () => {
       period: "August 2022 - October 1, 2025",
     },
     {
-      title: "Software Developer",
+      title: "Software Engineer",
       company: "Aldesa BPO Inc.",
       location: "Cebu City",
       type: "Fulltime",
-      tech: "HTML5, CSS3, Bootstrap, Jquery, JavaScript, C# asp.net mvc, SqlServer, Postman",
-      period: "October 6, 2026 - March 30, 2026",
+      tech: "HTML5, CSS3, Bootstrap, Jquery, JavaScript, C#, ASP.NET Core, MVC, Entity Framewokr, Azure Cloud, RESTful API,Bitbucket, Jira, Database SqlServer, Postman",
+      period: "October 6, 2026 - April 30, 2026",
     },
     {
       title: "Software Engineer",
