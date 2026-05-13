@@ -41,7 +41,7 @@ const mockData: Project[] = [
     title: "Bills Splitter Mobile Apps",
     link: "https://github.com/BinaryBloomVault/tractIt",
     live: "#",
-    tech: "ReactJs, React Native Expo, Zustand, Tailwind CSS, Firebase",
+    tech: " React Native Expo, Zustand, Tailwind CSS, Firebase",
     type: "StartUp Project",
     image: "/images/figma/billspliter/LoginScreen.png",
   },
