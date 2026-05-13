@@ -63,8 +63,15 @@ const Aboutme = () => {
             Learn More
           </AccordionTrigger>
           <AccordionContent className="text-gray-300 font-montserrat font-bold text-lg text-justify mt-2">
-     I have three years of industry experience in C/C++ backend development, primarily focused on embedded systems for Lexmark printers. In addition, I have six months of experience at Aldesa BPO Inc. as a Full-Stack Software Engineer, where I mainly worked on backend development and code maintenance for CRM web applications using the C# ASP.NET MVC framework.
-Beyond my professional experience, I also mentor students on their final-year projects as part of my freelance work. I provide guidance in areas such as Embedded Systems, IoT, AI, web applications, and mobile app development.
+            I have almost four years of experience in the IT industry, specializing in firmware 
+            and embedded systems development using C/C++. My background includes 
+            developing and maintaining embedded solutions for Lexmark printers, with a 
+            strong focus on low-level programming, backend integration, and 
+            hardware-software interaction. 
+            In addition, I have experience in full-stack web development using ASP.NET Core 
+            MVC and Entity Framework at Aldesa BPO Inc.. 
+            I am also a freelance developer with experience in Embedded Systems, IoT, AI, 
+            web applications, and mobile app development.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

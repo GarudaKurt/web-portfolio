@@ -17,13 +17,25 @@ import {
   ChevronRight,
   CodeSquareIcon,
   Building2,
+  LockIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Projects from "../gallery/mygallery";
 
-const mockData = [
+type Project = {
+  id: number;
+  title: string;
+  link: string;
+  live: string;
+  tech: string;
+  type: string;
+  image: string;
+  confidential?: boolean;
+};
+
+const mockData: Project[] = [
   {
     id: 1,
     title: "Bills Splitter Mobile Apps",
@@ -53,12 +65,13 @@ const mockData = [
   },
   {
     id: 4,
-    title: "Music Player App",
+    title: "Music Player Web App",
     link: "https://github.com/GarudaKurt/Music-Player/tree/test",
     live: "https://music-player-theta-one-93.vercel.app/playlist",
-    tech: "ReactJs, CSS3, NodeJs, ExpressJs, SQLite",
+    tech: "ReactJs, Tailwind, NodeJs, ExpressJs, SQLite",
     type: "Clients Project",
     image: "/images/figma/musicplayer/home.png",
+    confidential: true,
   },
   {
     id: 5,
@@ -68,6 +81,7 @@ const mockData = [
     tech: "NextJs, Tailwind, daisyUI, Zustand, Firebase Firestore",
     type: "Clients Project",
     image: "/images/figma/tourism/landing.png",
+    confidential: true,
   },
   {
     id: 6,
@@ -77,6 +91,7 @@ const mockData = [
     tech: "NextJS, TypeScript, Tailwind, shadcnUI, Zustand",
     type: "Clients Project",
     image: "/images/figma/inventory/add.png",
+    confidential: true,
   },
   {
     id: 7,
@@ -86,6 +101,7 @@ const mockData = [
     tech: "NextJs, shadcnUI, firebase",
     type: "Client Project",
     image: "/images/figma/kioskbmi/img_1.png",
+    confidential: true,
   },
   {
     id: 8,
@@ -104,6 +120,7 @@ const mockData = [
     tech: "NextJs, acernityUI, Firebase",
     type: "Client Project",
     image: "/images/figma/smartfan/image.png",
+    confidential: true,
   },
   {
     id: 10,
@@ -113,6 +130,7 @@ const mockData = [
     tech: "Delphi, Rest Components, SQLServer, FireMonkey (FMX), VLC",
     type: "Client Project",
     image: "/images/figma/desktop/pharmacy.png",
+    confidential: true,
   },
   {
     id: 11,
@@ -122,6 +140,7 @@ const mockData = [
     tech: "NextJs, acernityUI, Firebase",
     type: "Client Project",
     image: "/images/figma/energymonitoring/image.png",
+    confidential: true,
   },
   {
     id: 12,
@@ -141,9 +160,9 @@ const useVisibleCount = () => {
   useEffect(() => {
     const update = () => {
       const w = window.innerWidth;
-      if (w < 640) setVisibleCount(1);       
-      else if (w < 1024) setVisibleCount(2); 
-      else setVisibleCount(4);               
+      if (w < 640) setVisibleCount(1);
+      else if (w < 1024) setVisibleCount(2);
+      else setVisibleCount(4);
     };
 
     update();
@@ -196,7 +215,7 @@ const Myprojects = () => {
 
       {/* Project Cards */}
       <div className="flex bg-black items-center gap-2 sm:gap-4 px-2 sm:px-6 py-4">
-        {/* Prev Button — visible on ALL screen sizes */}
+        {/* Prev Button */}
         <Button
           onClick={handlePrev}
           disabled={isAtStart}
@@ -252,17 +271,26 @@ const Myprojects = () => {
                   </CardContent>
 
                   <CardFooter className="flex flex-col items-start gap-1 sm:gap-2 p-0">
+                    {/* View Code — confidential guard */}
                     <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-gray-300">
                       <Github className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-                      <Link
-                        href={project.link}
-                        className="underline hover:text-blue-400 truncate"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Code
-                      </Link>
+                      {project.confidential ? (
+                        <span className="flex items-center gap-1 text-yellow-500 italic">
+                          <LockIcon className="w-3 h-3 sm:w-4 sm:h-4" />
+                          Confidential Code
+                        </span>
+                      ) : (
+                        <Link
+                          href={project.link}
+                          className="underline hover:text-blue-400 truncate"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Code
+                        </Link>
+                      )}
                     </div>
+
                     <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-gray-300">
                       <ImagePlayIcon className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                       <Button
@@ -299,7 +327,7 @@ const Myprojects = () => {
           </AnimatePresence>
         </div>
 
-        {/* Next Button — visible on ALL screen sizes */}
+        {/* Next Button */}
         <Button
           onClick={handleNext}
           disabled={isAtEnd}
