@@ -25,7 +25,7 @@ const Aboutme = () => {
       company: "Aldesa BPO Inc.",
       location: "Cebu City",
       type: "Fulltime",
-      tech: "HTML5, CSS3, Bootstrap, Jquery, JavaScript, C#, ASP.NET Core, MVC, Entity Framewokr, Azure Cloud, RESTful API,Bitbucket, Jira, Database SqlServer, Postman",
+      tech: "HTML5, CSS3, Bootstrap, Jquery, JavaScript, C#, ASP.NET Core, MVC, Entity Framework, Azure Cloud, RESTful API,Bitbucket, Jira, Database SqlServer, Postman",
       period: "October 6, 2026 - April 30, 2026",
     },
     {
