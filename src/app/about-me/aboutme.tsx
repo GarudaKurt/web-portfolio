@@ -138,7 +138,7 @@ const Aboutme = () => {
           Click the button below to download my resume in PDF format.
         </p>
 
-        <a href="/resumes/ALDREN_LETADA_RESUME.pdf" download>
+        <a href="/resumes/aldren-letada.pdf" download>
           <Button
             variant="default"
             className="flex items-center gap-2 bg-pink-500 text-white hover:bg-pink-600"
