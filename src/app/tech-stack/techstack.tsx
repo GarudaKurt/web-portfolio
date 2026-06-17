@@ -31,7 +31,7 @@ import {
   FaGitlab,
   FaGithub,
   FaPython,
-  
+  FaMicrochip 
 } from "react-icons/fa";
 
 const techs = [
@@ -63,6 +63,7 @@ const techs = [
   { name: "Figma", icon: <SiFigma />, color: "#F24E1E" },
   { name: "Postman", icon: <SiPostman />, color: "#F24E1E" },
   { name: "Arduino", icon: <SiArduino />, color: "#00979D" },
+  {name: "STM32", icon: <FaMicrochip/>, color: "#03234B" },
   { name: "Raspberry Pi", icon: <SiRaspberrypi />, color: "#A22846" },
 ];
 
