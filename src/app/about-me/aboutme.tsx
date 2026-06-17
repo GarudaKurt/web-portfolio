@@ -33,7 +33,7 @@ const Aboutme = () => {
       company: "Freelancer",
       location: "Cebu City",
       type: "Parttime",
-      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, RESTAPI, OOP, C#,  C++, Delphi, SQLlite, SQLServer, Firebase",
+      tech: "HTML5, CSS3, Bootstrap, ReactJS, TypeScript, NextJS, NodeJS, ExpressJS, Python, RESTAPI, OOP, MVC, C#, C++, Delphi, PostGreSQL, MySQL, SQLServer, Supabase, Firebase",
       period: "November 2022 - Present",
     },
     {
