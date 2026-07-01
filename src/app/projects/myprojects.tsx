@@ -33,123 +33,148 @@ type Project = {
   type: string;
   image: string;
   confidential?: boolean;
+  description: string;
 };
 
 const mockData: Project[] = [
   {
     id: 1,
-    title: "Bills Splitter Mobile Apps",
+    title: "Bills Splitter",
     link: "https://github.com/BinaryBloomVault/tractIt",
     live: "#",
-    tech: " React Native Expo, Zustand, Tailwind CSS, Firebase",
-    type: "StartUp Project",
+    tech: "React Native Expo • Firebase • Zustand",
+    type: "Mobile Application",
     image: "/images/figma/billspliter/LoginScreen.png",
+    description:
+      "A mobile application for tracking shared expenses and splitting bills with real-time sync.",
   },
   {
     id: 2,
-    title: "Ferry Shuttle Booking System",
+    title: "Ferry Booking System",
     link: "https://github.com/GarudaKurt/CTU-BOOKINGF_SYSTEM_FRONT_END",
     live: "https://ctu-booking-system-front-end.vercel.app/dashboard",
-    tech: "Figma, NextJs, TypeScript, Tailwind, shadcnUI, Django, RestAPI, SQLite",
-    type: "Clients Project",
+    tech: "Next.js • Django • TypeScript • REST API • PostgreSQL",
+    type: "Full-Stack Web Application",
     image: "/images/figma/bookings/schedules.png",
+    description:
+      "An online booking platform for ferry reservations with schedule and dashboard management.",
   },
   {
     id: 3,
-    title: "Classroom Manangement",
+    title: "Classroom Management System",
     link: "https://github.com/GarudaKurt/ucmn-ee-students-attendance",
     live: "https://studentsattendace.vercel.app/signin",
-    tech: "NextJs, Tailwind, shadcnUI, Firebase",
-    type: "Clients Project",
+    tech: "Next.js • Firebase • shadcnUI",
+    type: "Web Application",
     image: "/images/figma/classroom/image_3.png",
+    description:
+      "A web platform for managing student attendance, classroom activities, and academic records.",
   },
   {
     id: 4,
-    title: "Music Player Web App",
+    title: "Music Streaming Platform",
     link: "https://github.com/GarudaKurt/Music-Player/tree/test",
     live: "https://music-player-theta-one-93.vercel.app/playlist",
-    tech: "ReactJs, Tailwind, NodeJs, ExpressJs, SQLite",
-    type: "Clients Project",
+    tech: "React • Node.js • Express • RestAPI • PostgreSQL",
+    type: "Web Application",
     image: "/images/figma/musicplayer/home.png",
     confidential: true,
+    description:
+      "A music streaming application with playlist management, media playback, and user authentication.",
   },
   {
     id: 5,
-    title: "Toursim & Rental Services.",
+    title: "Tourism & Vehicle Rental Platform",
     link: "https://github.com/GarudaKurt/nextjsWebApp/tree/main",
     live: "https://nextjs-web-app-eight.vercel.app/",
-    tech: "NextJs, Tailwind, daisyUI, Zustand, Firebase Firestore",
-    type: "Clients Project",
+    tech: "Next.js • Firebase • daisyUI",
+    type: "Full-Stack Web Application",
     image: "/images/figma/tourism/landing.png",
     confidential: true,
+    description:
+      "A booking platform for tourism services and vehicle rentals with reservations and management.",
   },
   {
     id: 6,
-    title: "Inventory System for EE Lab.",
+    title: "Laboratory Inventory System",
     link: "https://github.com/GarudaKurt/UCMN-EE-STUDENTS-WEB-APP-INVENTORY",
     live: "https://ucmn-ee-students-web-app-inventory.vercel.app/",
-    tech: "NextJS, TypeScript, Tailwind, shadcnUI, Zustand",
-    type: "Clients Project",
+    tech: "Next.js • TypeScript • Tailwind CSS • SQLServer",
+    type: "Inventory Management System",
     image: "/images/figma/inventory/add.png",
     confidential: true,
+    description:
+      "A web application for managing lab equipment, inventory tracking, and asset monitoring.",
   },
   {
     id: 7,
-    title: "Kiosk Machine Smart BMI IoT",
+    title: "Smart BMI IoT Kiosk",
     link: "https://github.com/GarudaKurt/mandaue-shs-smart-bmi",
     live: "https://smartbmi.vercel.app/",
-    tech: "NextJs, shadcnUI, firebase",
-    type: "Client Project",
+    tech: "ESP32 • Next.js • Firebase • shadcnUI ",
+    type: "IoT Solution",
     image: "/images/figma/kioskbmi/img_1.png",
     confidential: true,
+    description:
+      "An IoT-enabled BMI kiosk that records body measurements and syncs health data to the cloud.",
   },
   {
     id: 8,
-    title: "Inventory Management Dashboard with Email Notification",
+    title: "Inventory Management Dashboard",
     link: "https://github.com/GarudaKurt/ctu-inventory-system",
     live: "https://inventorymanagement-git-main-garudakurts-projects.vercel.app/",
-    tech: "NextJs, ShadcnUI, SQLite, NodeJs",
-    type: "Client Project",
+    tech: "Next.js • ExpressJs • RestAPI• SQLServer",
+    type: "Enterprise Dashboard",
     image: "/images/figma/inventory-management/img_2.png",
+    description:
+      "An inventory dashboard with stock monitoring, reporting, and automated email notifications.",
   },
   {
     id: 9,
-    title: "Smart Fan IoT Control",
+    title: "IoT Smart Fan Control System",
     link: "https://github.com/GarudaKurt/UCB-IOT-SMART-FAN-CONTROL",
     live: "https://smartfancontrol.vercel.app/",
-    tech: "NextJs, acernityUI, Firebase",
-    type: "Client Project",
+    tech: "ESP32 • Firebase • Next.js",
+    type: "IoT Solution",
     image: "/images/figma/smartfan/image.png",
     confidential: true,
+    description:
+      "A cloud-connected smart fan controller with remote monitoring and automatic temperature control.",
   },
   {
     id: 10,
     title: "Delphi Desktop Applications",
     link: "#",
     live: "#",
-    tech: "Delphi, Rest Components, SQLServer, FireMonkey (FMX), VLC",
-    type: "Client Project",
+    tech: "Delphi FMX • SQL Server",
+    type: "Desktop Application",
     image: "/images/figma/desktop/pharmacy.png",
     confidential: true,
+    description:
+      "Custom desktop applications built for business process automation and database management.",
   },
   {
     id: 11,
-    title: "Energy Monitoring IoT App",
+    title: "Energy Monitoring IoT System",
     link: "https://github.com/GarudaKurt/ucmn-ee-energy-monitoring-iot-app",
     live: "https://ucmn-ee-energy-monitoring-iot-app.vercel.app/",
-    tech: "NextJs, acernityUI, Firebase",
-    type: "Client Project",
+    tech: "ESP32 • Firebase • Next.js",
+    type: "IoT Dashboard",
     image: "/images/figma/energymonitoring/image.png",
     confidential: true,
+    description:
+      "A cloud-connected energy monitoring solution that visualizes electrical consumption in real time.",
   },
   {
     id: 12,
-    title: "Many more 50+ Embedded Projects",
+    title: "50+ Embedded Systems & IoT Projects",
     link: "https://github.com/GarudaKurt",
     live: "#",
-    tech: "Python, Google Colab, Rasperry Pi, Arduino, ESP32, C++",
-    type: "Client Project",
+    tech: "STM32 • ESP32 • Arduino • Raspberry Pi",
+    type: "Embedded Systems",
     image: "/images/projects/img_11.png",
+    description:
+      "A collection of embedded, automation, robotics, and IoT projects across microcontroller platforms.",
   },
 ];
 
@@ -206,10 +231,10 @@ const Myprojects = () => {
       {/* Header */}
       <div className="bg-black transition-colors duration-500 py-8 px-6 md:px-16">
         <h2 className="text-3xl md:text-5xl bg-gradient-to-tr from-blue-500 via-orange-500 to-orange-500 bg-clip-text text-transparent font-bold font-montserrat text-center mb-8">
-          PROJECTS
+          Featured Projects
         </h2>
         <h2 className="flex justify-center text-center text-xl font-semibold font-montserrat text-gray-500">
-          Things I&apos;ve built so far in Freelancing
+          A collection of software, embedded, IoT, and AI projects
         </h2>
       </div>
 
@@ -242,11 +267,15 @@ const Myprojects = () => {
                   key={project.id}
                   className="hover:shadow-lg transition-shadow cursor-pointer border-0 bg-secondary p-3 sm:p-6 transform hover:scale-105 hover:shadow-2xl"
                 >
-                  <CardHeader className="p-0 pb-2 sm:pb-4">
-                    <CardTitle className="text-sm sm:text-lg text-white font-semibold leading-snug">
-                      {project.title}
-                    </CardTitle>
-                  </CardHeader>
+             <CardHeader className="p-0 pb-3">
+  <CardTitle className="text-base sm:text-lg text-white font-semibold leading-snug">
+    {project.title}
+  </CardTitle>
+
+  <p className="text-xs sm:text-sm text-gray-400 mt-2 line-clamp-3">
+    {project.description}
+  </p>
+</CardHeader>
 
                   <CardContent className="relative flex justify-center p-0 pb-2 sm:pb-4">
                     <div className="w-full aspect-square max-w-[10rem] sm:max-w-[12rem] relative rounded-md overflow-hidden">
@@ -277,7 +306,7 @@ const Myprojects = () => {
                       {project.confidential ? (
                         <span className="flex items-center gap-1 text-yellow-500 italic">
                           <LockIcon className="w-3 h-3 sm:w-4 sm:h-4" />
-                          Confidential Code
+                          Private Repository
                         </span>
                       ) : (
                         <Link
