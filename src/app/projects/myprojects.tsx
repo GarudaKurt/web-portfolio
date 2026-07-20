@@ -56,6 +56,7 @@ const mockData: Project[] = [
     tech: "Next.js • Django • TypeScript • REST API • PostgreSQL",
     type: "Full-Stack Web Application",
     image: "/images/figma/bookings/schedules.png",
+    confidential: true,
     description:
       "An online booking platform for ferry reservations with schedule and dashboard management.",
   },
@@ -67,6 +68,7 @@ const mockData: Project[] = [
     tech: "Next.js • Firebase • shadcnUI",
     type: "Web Application",
     image: "/images/figma/classroom/image_3.png",
+    confidential: true,
     description:
       "A web platform for managing student attendance, classroom activities, and academic records.",
   },
