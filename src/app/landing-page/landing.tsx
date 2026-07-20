@@ -9,7 +9,7 @@ const Landing = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 mt-12 gap-8 md:gap-16">
         <div className="space-y-4 text-center md:text-left max-w-md font-montserrat md:max-w-lg">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white flex items-center justify-center md:justify-start gap-2">
-            Hi <span>👋</span>,
+            Hi,
           </h1>
 
           <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-white flex items-center justify-center md:justify-start gap-2">

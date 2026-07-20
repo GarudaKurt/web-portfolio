@@ -43,50 +43,51 @@ const mockData = [
   { id: 3, img: "/images/figma/classroom/image_2.png" },
   { id: 3, img: "/images/figma/classroom/image_3.png" },
 
+  // corporate website
+  { id: 4, img: "/images/figma/embedded/landing.png" },
+  { id: 4, img: "/images/figma/embedded/about-us.png" },
+  { id: 4, img: "/images/figma/embedded/services.png" },
+  { id: 4, img: "/images/figma/embedded/timeline.png" },
+  { id: 4, img: "/images/figma/embedded/testomonial.png" },
+  { id: 4, img: "/images/figma/embedded/footer.png" },
+
   // Music Player
-  { id: 4, img: "/images/figma/musicplayer/home.png" },
-  { id: 4, img: "/images/figma/musicplayer/playlist.png" },
-  { id: 4, img: "/images/figma/musicplayer/music.png" },
-  { id: 4, img: "/images/figma/musicplayer/playlist.png" },
-  { id: 4, img: "/images/figma/musicplayer/schedule.png" },
+  { id: 5, img: "/images/figma/musicplayer/home.png" },
+  { id: 5, img: "/images/figma/musicplayer/playlist.png" },
+  { id: 5, img: "/images/figma/musicplayer/music.png" },
+  { id: 5, img: "/images/figma/musicplayer/playlist.png" },
+  { id: 5, img: "/images/figma/musicplayer/schedule.png" },
 
   // Tourism
-  { id: 5, img: "/images/figma/tourism/landing.png" },
-  { id: 5, img: "/images/figma/tourism/gallery.png" },
-  { id: 5, img: "/images/figma/tourism/services.png" },
-  { id: 5, img: "/images/figma/tourism/rentals.png" },
-  { id: 5, img: "/images/figma/tourism/billing.png" },
-  { id: 5, img: "/images/figma/tourism/rentalInfo.png" },
-  { id: 5, img: "/images/figma/tourism/confirmation.png" },
-  { id: 5, img: "/images/figma/tourism/status.png" },
-  { id: 5, img: "/images/figma/tourism/checkout.png" },
+  { id: 6, img: "/images/figma/tourism/landing.png" },
+  { id: 6, img: "/images/figma/tourism/gallery.png" },
+  { id: 6, img: "/images/figma/tourism/services.png" },
+  { id: 6, img: "/images/figma/tourism/rentals.png" },
+  { id: 6, img: "/images/figma/tourism/billing.png" },
+  { id: 6, img: "/images/figma/tourism/rentalInfo.png" },
+  { id: 6, img: "/images/figma/tourism/confirmation.png" },
+  { id: 6, img: "/images/figma/tourism/status.png" },
+  { id: 6, img: "/images/figma/tourism/checkout.png" },
 
   // Inventory
-  { id: 6, img: "/images/figma/inventory/add.png" },
-  { id: 6, img: "/images/figma/inventory/order.png" },
-  { id: 6, img: "/images/figma/inventory/history.png" },
+  { id: 7, img: "/images/figma/inventory/add.png" },
+  { id: 7, img: "/images/figma/inventory/order.png" },
+  { id: 7, img: "/images/figma/inventory/history.png" },
 
   // kiosk bmi
-  { id: 7, img: "/images/figma/kioskbmi/img_1.png" },
-  { id: 7, img: "/images/figma/kioskbmi/img_2.png" },
-  { id: 7, img: "/images/figma/kioskbmi/img_3.png" },
-  { id: 7, img: "/images/figma/kioskbmi/img_4.png" },
-  { id: 7, img: "/images/figma/kioskbmi/img_5.png" },
+  { id: 8, img: "/images/figma/kioskbmi/img_1.png" },
+  { id: 8, img: "/images/figma/kioskbmi/img_2.png" },
+  { id: 8, img: "/images/figma/kioskbmi/img_3.png" },
+  { id: 8, img: "/images/figma/kioskbmi/img_4.png" },
+  { id: 8, img: "/images/figma/kioskbmi/img_5.png" },
 
   // ctu inventory
-  { id: 8, img: "/images/figma/inventory-management/img_1.png" },
-  { id: 8, img: "/images/figma/inventory-management/img_2.png" },
+  { id: 9, img: "/images/figma/inventory-management/img_1.png" },
+  { id: 9, img: "/images/figma/inventory-management/img_2.png" },
 
   // IoT
-  { id: 9, img: "/images/figma/smartfan/image.png" },
-  { id: 9, img: "/images/figma/energymonitoring/image.png" },
-
-  // Desktop
-  { id: 10, img: "/images/figma/desktop/textbook.png" },
-  { id: 10, img: "/images/figma/desktop/inventory_1.png" },
-  { id: 10, img: "/images/figma/desktop/library.png" },
-  { id: 10, img: "/images/figma/desktop/pharmacy.png" },
-  { id: 10, img: "/images/figma/desktop/queue.png" },
+  { id: 10, img: "/images/figma/smartfan/image.png" },
+  { id: 10, img: "/images/figma/energymonitoring/image.png" },
 ];
 
 const Projects = ({

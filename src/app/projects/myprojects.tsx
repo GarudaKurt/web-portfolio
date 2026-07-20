@@ -72,6 +72,18 @@ const mockData: Project[] = [
   },
   {
     id: 4,
+    title: "Cebu Embedded Lab",
+    link: "https://github.com/GarudaKurt/Music-Player/tree/test",
+    live: "https://cebuembeddedlab.com/",
+    tech: "Next.js • acernityui • Supabase • RestAPI",
+    type: "Web Application",
+    image: "/images/figma/embedded/landing.png",
+    confidential: true,
+    description:
+      "A business website for embedded systems, IoT solutions, software development, and SEO optimization.",
+  },
+  {
+    id: 5,
     title: "Music Streaming Platform",
     link: "https://github.com/GarudaKurt/Music-Player/tree/test",
     live: "https://music-player-theta-one-93.vercel.app/playlist",
@@ -83,7 +95,7 @@ const mockData: Project[] = [
       "A music streaming application with playlist management, media playback, and user authentication.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tourism & Vehicle Rental Platform",
     link: "https://github.com/GarudaKurt/nextjsWebApp/tree/main",
     live: "https://nextjs-web-app-eight.vercel.app/",
@@ -95,7 +107,7 @@ const mockData: Project[] = [
       "A booking platform for tourism services and vehicle rentals with reservations and management.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Laboratory Inventory System",
     link: "https://github.com/GarudaKurt/UCMN-EE-STUDENTS-WEB-APP-INVENTORY",
     live: "https://ucmn-ee-students-web-app-inventory.vercel.app/",
@@ -107,7 +119,7 @@ const mockData: Project[] = [
       "A web application for managing lab equipment, inventory tracking, and asset monitoring.",
   },
   {
-    id: 7,
+    id: 8,
     title: "Smart BMI IoT Kiosk",
     link: "https://github.com/GarudaKurt/mandaue-shs-smart-bmi",
     live: "https://smartbmi.vercel.app/",
@@ -119,7 +131,7 @@ const mockData: Project[] = [
       "An IoT-enabled BMI kiosk that records body measurements and syncs health data to the cloud.",
   },
   {
-    id: 8,
+    id: 9,
     title: "Inventory Management Dashboard",
     link: "https://github.com/GarudaKurt/ctu-inventory-system",
     live: "https://inventorymanagement-git-main-garudakurts-projects.vercel.app/",
@@ -130,7 +142,7 @@ const mockData: Project[] = [
       "An inventory dashboard with stock monitoring, reporting, and automated email notifications.",
   },
   {
-    id: 9,
+    id: 10,
     title: "IoT Smart Fan Control System",
     link: "https://github.com/GarudaKurt/UCB-IOT-SMART-FAN-CONTROL",
     live: "https://smartfancontrol.vercel.app/",
@@ -140,18 +152,6 @@ const mockData: Project[] = [
     confidential: true,
     description:
       "A cloud-connected smart fan controller with remote monitoring and automatic temperature control.",
-  },
-  {
-    id: 10,
-    title: "Delphi Desktop Applications",
-    link: "#",
-    live: "#",
-    tech: "Delphi FMX • SQL Server",
-    type: "Desktop Application",
-    image: "/images/figma/desktop/pharmacy.png",
-    confidential: true,
-    description:
-      "Custom desktop applications built for business process automation and database management.",
   },
   {
     id: 11,
@@ -167,7 +167,7 @@ const mockData: Project[] = [
   },
   {
     id: 12,
-    title: "50+ Embedded Systems & IoT Projects",
+    title: "100+ Embedded Systems & IoT Projects",
     link: "https://github.com/GarudaKurt",
     live: "#",
     tech: "STM32 • ESP32 • Arduino • Raspberry Pi",
